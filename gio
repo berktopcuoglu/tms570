@@ -1,0 +1,15 @@
+#include "gio.h"
+
+/* initialize gio     */
+gioInit();
+
+/* default olarak input seçilmiş ve pull up dirençi bağlanmıştır.
+gioSetDirection(port, dir);
+
+/* using gio port B, pin 1, value 0  */
+gioSetBit(port, bit, value);
+gioSetBit(gioPORTB,1,0);
+
+/* using port B, pin 1 */
+gioToggleBit(port, bit);
+gioToggleBit(gioPORTB, 2);
